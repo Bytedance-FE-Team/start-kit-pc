@@ -1,14 +1,24 @@
+@import "../../static/styles/var.less";
 
 .header {
-  margin-bottom: .2rem;
-  padding: 0 .7rem; 
-  height: 1rem;
-  line-height: 1rem;
-  background-color: #4997ba;
-  text-align: center;
-  color: #fff;
-  font-size: .34rem;
-  overflow: hidden;
-  text-overflow:ellipsis;
-  white-space: nowrap;
+  position: relative;
+  height: @header-height;
+  background-color: @defalt-color;
+  box-shadow: 0px 3px 3px hsla(0,0%,67%,.5);
+  z-index: 10;
+  font-family: PingFangSC-Regular, sans-serif;
+  .header-item {
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 48px;
+  }
+  .user-name {
+    right: 75px;
+    color: #FFF;
+  }
+  .logout {
+    right: 30px;
+    color: #FFF;
+  }
 }

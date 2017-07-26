@@ -2,15 +2,10 @@ import React from 'react'
 import './Header.less'
 
 export const Header = (props) => (
-  <div>
-    <div className='header'>
-      {props.title}
-    </div>
-  </div>
+  <header className='header'>
+    <span className='user-name header-item'>{'苏理煌'}</span>
+    <a className='logout header-item' href='/logout'>退出</a>
+  </header>
 )
-
-Header.propTypes = {
-  title: React.PropTypes.string.isRequired
-}
 
 export default Header

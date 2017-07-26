@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import { Button, Row, Col, Card } from 'antd'
 import './HomeView.less'
@@ -84,15 +85,18 @@ class HomeView extends React.Component {
             <Button onClick={(e) => { this.handleCHangeRouter(e, 'PUBLISHED') }}>Router2</Button>
           </Col>
         </Row>
+        <p style={{ height: 500 }}>hahah</p>
+        <p style={{ height: 500 }}>hahah</p>
+        <p style={{ height: 500 }}>hahah</p>
       </div>
     )
   }
 }
 
 HomeView.propTypes = {
-  location: React.PropTypes.object,
-  params: React.PropTypes.object,
-  router: React.PropTypes.object
+  location: PropTypes.object,
+  params: PropTypes.object,
+  router: PropTypes.object
 }
 
 export default HomeView
