@@ -661,7 +661,6 @@ Project
 
 [工程演示demo](https://github.com/taikongfeizhu/webpack-develop-startkit)
 
-[WIKI链接](https://wiki.bytedance.net/pages/editpage.action?pageId=85307579)
 
 ##小结
 
